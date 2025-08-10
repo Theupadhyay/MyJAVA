@@ -5,12 +5,12 @@ public class FirstConnection {
     public static void main(String[] args) throws ClassNotFoundException {
 
         String url = "jdbc:mysql://localhost:3306/Students";
-        
+
         String username = "root";
         String password = "8651";
         String query = "Select * from Student;";
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Drivers Loaded sussesfully");
         } catch (ClassNotFoundException e) {
             System.out.println(e.getMessage());

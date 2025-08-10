@@ -1,13 +1,13 @@
 import java.sql.*;
 
-public class InsertionInJDBC {
+public class DeletionInJDBC {
     public static void main(String[] args) {
 
         String url = "jdbc:mysql://localhost:3306/abhishek";
 
         String username = "root";
         String password = "8651";
-        String query = "INSERT INTO employee (id, name, dept, salary) VALUES (3, 'Ashish', 'DevOps Engineer', 1000);";
+        String query = "delete from employee where id = 3;";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Drivers Loaded sussesfully");
@@ -23,9 +23,9 @@ public class InsertionInJDBC {
             int rowsAffected = stmt.executeUpdate(query);
 
             if (rowsAffected > 0) {
-                System.out.println("insertSucessfull." + rowsAffected + "row's affected.");
+                System.out.println("Deletion Sucessfull." + rowsAffected + "row's affected.");
             } else {
-                System.out.println("InsertionFailed!!");
+                System.out.println("Deletion Failed!!");
             }
 
             stmt.close();
