@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 public class AddArray {
     public static void main(String[] args) {
-        int[] array1 = {9,1, 2, 3};
-        int[] array2 = {4, 5, 6,8};
+        int[] array1 = {9, 1, 2, 3};
+        int[] array2 = {4, 5, 6, 8};
 
         int[] sumArray = new int[array1.length + 1];
 

@@ -10,7 +10,6 @@ public class String01 {
 //        for (int i = 0; i < str.length(); i++) {
 //            System.out.print(str.charAt(i));
 //        }
-
 //        String s1 = "abhi";
 //        String s2 = "uapdhyay";
 //        if(s1.compareTo(s2) ==0){
