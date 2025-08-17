@@ -135,9 +135,7 @@ public class Pattern {
         System.out.println("pattern 11");
         for (int row = 1; row <= n; row++) {
             int totalColInRows = row > n ? 2 * n - row : row;
-
             int noOfSpaces = n - totalColInRows;
-
             for (int s = 0; s < noOfSpaces; s++) {
                 System.out.print(" ");
             }

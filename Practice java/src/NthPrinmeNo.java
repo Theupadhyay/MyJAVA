@@ -26,6 +26,4 @@ public class NthPrinmeNo {
         }
         System.out.println(num);
     }
-
-
 }
