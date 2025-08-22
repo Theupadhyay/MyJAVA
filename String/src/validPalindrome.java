@@ -1,8 +1,9 @@
-public class validPalindrome {
-        public boolean isPalindrome(String s) {
+class validPalindrome {
+        public static boolean isPalindrome(String s) {
             String s1 = "";
             char c;
             String s2 = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+//            System.out.println(s2);
             for (int i = 0; i < s2.length(); i++) {
                 c = s2.charAt(i);
                 s1 = c + s1;
@@ -13,6 +14,11 @@ public class validPalindrome {
                 return false;
             }
         }
+
+    public static void main(String[] args) {
+        String s = "A man, a plan, a canal: Panama";
+        System.out.println(isPalindrome(s));
+    }
 }
 
 /*
