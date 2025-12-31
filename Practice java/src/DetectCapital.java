@@ -9,6 +9,7 @@ public class DetectCapital {
         }
 
         if (capitalCount == 0) {
+
             return true;
         } else if (capitalCount == n) {
             return true;
@@ -17,4 +18,9 @@ public class DetectCapital {
         }else return false;
 
     }
+
+    public static void main(String[] args) {
+
+    }
 }
+

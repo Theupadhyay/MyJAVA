@@ -4,9 +4,6 @@ public class SortColors {
         nums[i] = nums[j];
         nums[j] = temp;
     }
-    
-    
-    
     static public void sortColors(int[] nums) {
         int i=0,j=0,k=nums.length-1;
         while(i <= k){
